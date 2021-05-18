@@ -1,0 +1,202 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Demo</title>
+<style>
+    .card{
+        border-radius:15px;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-light justify-content-between" style="background-color:rgb(148, 7, 167);">
+        <a class="navbar-brand"><img src="https://www.livefurnish.com/hs-fs/hubfs/raw_assets/public/LiveFurnish_Feb_2021/images/Logo-light.png?" width="150px" height="50 px"></a>
+        <ul class="navbar-nav ml-auto mr-5">
+            <li class="nav-item text-light"> Last log in : Oct 1 2020 00:00 A.M IST </li>
+        </ul>
+    </nav>
+
+<header><nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active border-right">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item border-right">
+          <a class="nav-link" href="#">Workflows</a>
+        </li>
+        <li class="nav-item border-right">
+          <a class="nav-link" href="#">Image Credit</a>
+        </li>
+        <li class="nav-item border-right">
+            <a class="nav-link" href="#">NewsFeed</a>
+          </li></ul>
+          <ul class="navbar-nav ml-auto mr-5">
+              <li class="nav-item">
+                  <a class="nav-link">notification</a></li>
+              <li class="nav-item"><a class="nav-link">profile</a></li>
+          </ul>
+    </div>
+  </nav></header>
+<br>
+  <!-- credit section -->
+<section class="container" >
+
+    <h4>Good Morning, Sandeep ! </h4>
+    <div class="row">
+    <div class="col-lg-10"><small class="text-muted ">Today is Oct 01 2020</small></div>
+   <div class="col "><button  type="button" class="btn btn-primary"> Add Credit</button></div></div>
+</div>
+</div>
+</section>
+<br>
+<!-- credits row -->
+<section class="container" >
+<div class="card-deck mr-5" style=" width:70rem; ">
+    <div class="card"  >
+      <div class="card-body">
+        <p class="card-text"><h5>98</h5></p>
+        <p class="card-text">Available Credits</p>
+        <small class="text-muted">03-11-2020</small>
+      </div>
+    </div>
+    <div class="card" >
+      <div class="card-body">
+          <p class="card-text"><h5>95%</h5></p>
+          <p class="card-text">Available Credits</p>
+          <small class="text-muted">03-11-2020</small>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-body">
+        <p class="card-text"><h5>95%</h5></p>
+        <p class="card-text">Available Credits</p>
+        <small class="text-muted">03-11-2020</small>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-body">
+        <p class="card-text"><h5>95%</h5></p>
+          <p class="card-text">Available Credits</p>
+          <small class="text-muted">03-11-2020</small>
+      </div>
+    </div>
+  </div>
+</section>
+ <div class="container"><hr class="mx-20 my-5"></div>
+<!-- reports section -->
+<section class="container">
+    <h3>Report</h3>
+    <br>
+    <div class="card-deck  row">
+    <div class="card col-4 ">
+        <div class="card-body row mt-3">
+        <p class="card-text"><h5>work Report</h5> <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle round" style="margin-left: 7rem; " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Month
+            </button>
+            <div class="dropdown-menu" aria-labelledby="Month">
+              <a class="dropdown-item" href="#">jan</a>
+              <a class="dropdown-item" href="#">Feb</a>
+              <a class="dropdown-item" href="#">Mar</a>
+            </div>
+          </div> </p>
+</div>
+<div class="card-body">
+ <h5 class="ml-3">95%</h5>
+<small class="card-text ml-3 mt-0">Work accuracy:</small>
+<div class="progress">
+    <div class="progress-bar " style="width:95%"></div> </div>
+    </div>
+    <div class="card-body">
+    <h5 class="ml-3">5%</h5>
+    <small class="card-text ml-3 mt-0">Negative work:</small>
+    <div class="progress">
+    <div class="progress-bar " style="width:5%"></div> <br>
+  </div>
+  </div> </div>
+    <div class="card col-8">
+        <div class="card-body row ">
+            <p class="card-text"><h6>Image Rendring and Monitoring Report</h6>
+            <div class="dropdown">
+            <button class="btn btn-rounded btn-outline-secondary  dropdown-toggle " style="margin-left:35rem;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Month
+              </button>
+              <div class="dropdown-menu" aria-labelledby="Month">
+                <a class="dropdown-item" href="#">jan</a>
+                <a class="dropdown-item" href="#">Feb</a>
+                <a class="dropdown-item" href="#">Mar</a>
+              </div></div></p>
+            </div>
+            <img src="{% static '/img/bars.png' %}" >
+    </div>
+    </div>
+</section>
+
+<!-- download button -->
+<section class="container" >
+
+    <h3 class="mt-5">Download LiveFurnish</h3>
+    <div class="card-deck ml-5 mr-5">
+    <div class="card">
+        <button type="button" class="btn btn-lg  btn-primary">
+            <div class="row ml-1">
+            <img src="{% static '/img/windowsLogo.png' %}" height="50" width="50" style="border-radius:5px;">
+            <p><small class="text-light">download
+            </small><br>
+            <small class="text-light ml-1">download for windows64</small></p>
+        </div>
+        </button>
+      </div>
+
+      <div class="card ml-5">
+        <button type="button" class="btn btn-lg  btn-primary">
+            <div class="row ml-1">
+            <img src="{% static '/img/windowsLogo.png' %}" height="50" width="50" style="border-radius:5px;" >
+            <p><small class="text-light">download
+            </small><br>
+            <small class="text-light ml-1">download for windows32 bit</small></p>
+     </div>
+      </div>
+      <div class="card ml-5">
+        <button type="button" class="btn btn-lg   bg-warning">
+            <div class="row ml-1">
+            <img src="{% static '/img/apple-logo.png' %}" height="50" width="50" style="border-radius:5px;">
+            <p><small class="text-light">download
+            </small><br>
+            <small class="text-light ml-1">ios version for Mac </small></p>
+     </div>
+
+      </div>
+      </div>
+
+</section class ="container">
+<!-- calender and news feeds -->
+<section class="container" >
+   <div class="row">
+       <div class="col-5"><h3 class=" mt-5">NewsFeed</h3> </div>
+    <p class="mr-5 mt-5"><a  href="#">view all</a></p>
+   <div class="col-4"> <h3 class=" mt-5">Event Calander</h3></div>
+   <p class="mr-0 ml-5 mt-5"><a  href="#">view all</a></p>
+</div>
+
+</section>
+<!-- footer -->
+<footer class="page-footer mt-5 bg-light">
+   <div class="footer-copyright text-center py-3"> &copy; 2021 livefurnish.com</div>
+</footer>
+<!-- bootstrap.js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
